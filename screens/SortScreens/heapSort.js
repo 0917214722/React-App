@@ -15,7 +15,7 @@ export default class HeapSort extends Component {
         return (
             <View>
                 <Text>
-                    this is heap sort
+                    this is heap sort abcdcdcdcd
                 </Text>
             </View>
         )
