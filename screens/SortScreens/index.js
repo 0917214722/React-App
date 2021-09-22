@@ -24,9 +24,6 @@ export default class SortScreens extends Component{
         data: props.route.params 
     }
   }
-  gotoHome(){
-    this.navigation.navigate('Home');
-  }
   render(){
     return(
       <Tab.Navigator>
