@@ -11,18 +11,22 @@ import {
   TouchableOpacity,
   FlatList,
 } from 'react-native';
+const data = require('../../constants/sceens.json');
 export default class HomeScreen extends Component{
   constructor(props){
     super(props);
     this.navigation = props.navigation;
     this.gotoDetail = this.gotoDetail.bind(this);
     this.renderItem = this.renderItem.bind(this);
+    // this.state = {
+    //   data:[
+    //     {id :1, name: 'Thuật toán sắp xếp !!!'},
+    //     {id :2, name: 'SomeThing'},
+    //     {id :3, name: 'minhvn'},
+    //   ]
+    // }
     this.state = {
-      data:[
-        {id :1, name: 'Thuật toán sắp xếp !!!'},
-        {id :2, name: 'SomeThing'},
-        {id :3, name: 'minhvn'},
-      ]
+      data: data.screens
     }
   }
   gotoDetail(name){

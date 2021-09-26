@@ -1,0 +1,19 @@
+{
+    "screens":[
+        {	
+					"id": "1",
+					"name": "Thuật toán sắp xếp !!!",
+					"bubble": {
+						"name":""
+					}
+        },
+				{	
+					"id": "2",
+					"name": "SomeThing"
+        },
+				{	
+					"id": "3",
+					"name": "minhvn"
+        }
+    ]
+}

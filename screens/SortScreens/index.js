@@ -16,12 +16,13 @@ const Tab = createMaterialTopTabNavigator();
 import BubbleSort from '../BubbleSort/bbSort';
 import HeapSort from './heapSort';
 import InsertionSort from './insertionSort';
+const data = require("../../constants/sceens.json")
 export default class SortScreens extends Component{
   constructor(props){
     super(props);
     this.navigation = props.navigation;
     this.state = {
-        data: props.route.params 
+      data: data.screens
     }
   }
   render(){
