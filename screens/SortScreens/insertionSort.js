@@ -12,6 +12,13 @@ import {
     Image
   } from 'react-native';
 export default class InsertionSort extends Component {
+	constructor(props){
+		super(props);
+    this.state = {
+      currentImg: require('../../img/insertSort.png'),
+    
+    }
+	}
     render() {
         return (
 						<ScrollView>
@@ -47,19 +54,24 @@ export default class InsertionSort extends Component {
 									</View>
 									<View style = {styles.content}>
 										<Text style = {styles.contentText}>
-										- Độ phức tạp O(N2), không đủ nhanh với dữ liệu lớn.
+										- Độ phức tạp O(N^2), không đủ nhanh với dữ liệu lớn.
 										</Text>
 										
 									</View>
 								</View>
 								<View style = {styles.group}>
 									<View style = {styles.tittle}>
-										<Text style = {styles.tittleText}>Code C++</Text>
+										<Text style = {styles.tittleText} onPress = {() =>{
+                			this.setState({currentImg: require('../../img/insertSort.png')})
+                		}} >Code C++ / </Text>
+										<Text style = {styles.tittleText} onPress = {() =>{
+                			this.setState({currentImg: require('../../img/insertJava.png')})
+                		}} >Java</Text>
 									</View>
 									<View style = {styles.content}>
 										<View style = {styles.codeArena}>
-											{/* <Image source = {require('')}
-											style = {styles.image} /> */}
+											<Image source = {this.state.currentImg}
+											style = {styles.image} />
 										</View>
 									</View>
 								</View>
@@ -81,7 +93,8 @@ const styles = StyleSheet.create({
   },
   tittle:{
     borderBottomWidth: 1,
-    borderBottomColor: '#718093'
+    borderBottomColor: '#718093',
+	flexDirection: 'row'
 
   },
   tittleText:{

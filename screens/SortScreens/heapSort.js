@@ -11,7 +11,15 @@ import {
     TouchableOpacity,
 		Image
   } from 'react-native';
+	// const heap = require ('./heapSort.PNG')
 export default class HeapSort extends Component {
+	constructor(props){
+    super(props);
+    this.state = {
+      currentImg: require('../../img/heapSort.png'),
+    
+    }
+  }
     render() {
         return (
         	<ScrollView>
@@ -56,12 +64,17 @@ export default class HeapSort extends Component {
 							</View>
 							<View style = {styles.group}>
 								<View style = {styles.tittle}>
-									<Text style = {styles.tittleText}>Code C++</Text>
+									<Text style = {styles.tittleText} onPress = {() =>{
+                		this.setState({currentImg: require('../../img/heapSort.png')})
+                		}} >Code C++ / </Text> 
+									<Text style = {styles.tittleText} onPress = {() =>{
+                		this.setState({currentImg: require('../../img/heapjava.png')})
+                		}} >Java</Text>
 								</View>
 								<View style = {styles.content}>
 									<View style = {styles.codeArena}>
-										{/* <Image source = {require('')}
-										style = {styles.image} /> */}
+										<Image source = {this.state.currentImg}
+										style = {styles.image} />
 									</View>
 								</View>
 							</View>
@@ -83,8 +96,8 @@ const styles = StyleSheet.create({
   },
   tittle:{
     borderBottomWidth: 1,
-    borderBottomColor: '#718093'
-
+    borderBottomColor: '#718093',
+		flexDirection: 'row'
   },
   tittleText:{
     fontSize: 30,
@@ -97,9 +110,9 @@ const styles = StyleSheet.create({
   },
   codeArena:{
     borderWidth: 1,
+		// width: "100%"
   },
   image:{
-    width: 378,
- 
+		width: 378,
   }
 });   

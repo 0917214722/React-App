@@ -13,7 +13,13 @@ import {
 } from 'react-native';
 
 export default class BubbleSort extends Component{
-  
+  constructor(props){
+    super(props);
+    this.state = {
+      currentImg: require('./bbs.png'),
+    
+    }
+  }
   render(){
     return(
       <ScrollView>
@@ -58,11 +64,16 @@ export default class BubbleSort extends Component{
           </View>
           <View style = {styles.group}>
             <View style = {styles.tittle}>
-              <Text style = {styles.tittleText}>Code C++</Text>
+              <Text style = {styles.tittleText} onPress = {() =>{
+                this.setState({currentImg: require('./bbs.png')})
+                }}  >Code C++ /</Text>
+              <Text style = {styles.tittleText} onPress = {() =>{
+                this.setState({currentImg: require('./bbsjava.png')})
+                }} >Java </Text>
             </View>
             <View style = {styles.content}>
               <View style = {styles.codeArena}>
-                <Image source ={require('./bbs.png')}
+                <Image source ={this.state.currentImg}
                 style = {styles.image} />
               </View>
             </View>
@@ -85,8 +96,8 @@ const styles = StyleSheet.create({
   },
   tittle:{
     borderBottomWidth: 1,
-    borderBottomColor: '#718093'
-
+    borderBottomColor: '#718093',
+    flexDirection: 'row'
   },
   tittleText:{
     fontSize: 30,
