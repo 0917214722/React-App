@@ -28,7 +28,7 @@ export default class SortScreens extends Component{
   render(){
     return(
       <Tab.Navigator>
-        <Tab.Screen name="Bubble Sort" component={BubbleSort} />
+        <Tab.Screen name="Bubble Sort" component={BubbleSort}/>
         <Tab.Screen name="Heap Sort" component={HeapSort} />
         <Tab.Screen name="Insertion Sort" component={InsertionSort} />
       </Tab.Navigator>
