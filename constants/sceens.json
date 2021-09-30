@@ -2,18 +2,16 @@
     "screens":[
         {	
 					"id": "1",
-					"name": "Thuật toán sắp xếp !!!",
-					"bubble": {
-						"name":""
-					}
+					"name": "Thuật toán sắp xếp !!!"
         },
 				{	
 					"id": "2",
-					"name": "SomeThing"
+					"name": "Mảng và danh sách liên kết !!!"
         },
 				{	
 					"id": "3",
 					"name": "minhvn"
         }
+				
     ]
 }

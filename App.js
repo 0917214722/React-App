@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import HomeScreen from './screens/HomeScreen';
 import SortScreens from './screens/SortScreens';
-import SomeThing from './screens/SomeThing';
+import ArrAndLinkList from './screens/ArrAndLinkList';
 const Stack = createNativeStackNavigator();
-const Tab = createMaterialTopTabNavigator();
 import {
   SafeAreaView,
   ScrollView,
@@ -51,9 +49,9 @@ export default function App() {
               }
         }}></Stack.Screen>
         <Stack.Screen
-           name='SomeThing'
-           component={SomeThing}
-           options={{title: 'SomeThing !!!',
+           name='Mảng và danh sách liên kết !!!'
+           component={ArrAndLinkList}
+           options={{title: 'Mảng và danh sách liên kết !!!',
              headerTintColor: '#ffffff',
              headerTitleAlign: 'center',
                headerStyle:{

@@ -101,6 +101,7 @@ const styles = StyleSheet.create({
   },
   tittleText:{
     fontSize: 30,
+    
   },
   content:{
     marginTop: 10,
