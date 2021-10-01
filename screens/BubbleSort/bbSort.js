@@ -11,13 +11,13 @@ import {
   TouchableOpacity,
   Image
 } from 'react-native';
-
+const img = require('../../constants/sceens.json')
 export default class BubbleSort extends Component{
   constructor(props){
     super(props);
     this.state = {
       currentImg: require('./bbs.png'),
-    
+      data: img.screens.bubble,
     }
   }
   render(){

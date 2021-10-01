@@ -13,7 +13,11 @@ export default class ArrAndLinkList extends Component {
       }
     render() {
         return (
-					<Tab.Navigator>
+					<Tab.Navigator
+						activeColor="#e1b12c"
+						inactiveColor="#3e2465"
+						barStyle={{ backgroundColor: '#487eb0' }}
+					>
 						<Tab.Screen name="Mảng" component={Arr}/>
 						<Tab.Screen name="Danh sách liên kết" component={linkList} />
 				</Tab.Navigator>
