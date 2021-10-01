@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from './screens/HomeScreen';
 import SortScreens from './screens/SortScreens';
 import ArrAndLinkList from './screens/ArrAndLinkList';
+import Login from './screens/Login';
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -19,7 +20,22 @@ import {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator>
+      <Stack.Screen
+          name='Login'
+          component={Login}
+          options={{title: 'Lập trình không khó !!!',
+            headerTintColor: '#ffffff',
+            headerTitleAlign: 'center',
+              headerStyle:{
+                backgroundColor: '#4cd137',
+              },
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              }
+
+        }} // style header bar
+        ></Stack.Screen>
         <Stack.Screen
           name='Home'
           component={HomeScreen}
