@@ -5,6 +5,7 @@ import HomeScreen from './screens/HomeScreen';
 import SortScreens from './screens/SortScreens';
 import ArrAndLinkList from './screens/ArrAndLinkList';
 import Login from './screens/Login';
+import Chart from './screens/Chart';
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -21,7 +22,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
           name='Login'
           component={Login}
           options={{title: 'Lập trình không khó !!!',
@@ -35,7 +36,7 @@ export default function App() {
               }
 
         }} // style header bar
-        ></Stack.Screen>
+        ></Stack.Screen> */}
         <Stack.Screen
           name='Home'
           component={HomeScreen}
@@ -64,6 +65,20 @@ export default function App() {
                 fontWeight: 'bold',
               }
         }}></Stack.Screen>
+        <Stack.Screen
+           name='Top 10 ngôn ngữ lập trình phổ biến !!!'
+           component={Chart}
+           options={{title: 'Top 10 ngôn ngữ lập trình phổ biến !!!',
+             headerTintColor: '#ffffff',
+             headerTitleAlign: 'center',
+               headerStyle:{
+                 backgroundColor: '#4cd137',
+               },
+               headerTitleStyle: {
+                 fontWeight: 'bold',
+               }
+         }}
+        ></Stack.Screen>
         <Stack.Screen
            name='Mảng và danh sách liên kết !!!'
            component={ArrAndLinkList}

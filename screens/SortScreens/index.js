@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 const Tab = createMaterialTopTabNavigator();
-import BubbleSort from '../BubbleSort/bbSort';
+import BubbleSort from './bbSort';
 import HeapSort from './heapSort';
 import InsertionSort from './insertionSort';
 const data = require("../../constants/sceens.json")

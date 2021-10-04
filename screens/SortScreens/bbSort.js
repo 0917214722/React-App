@@ -16,7 +16,7 @@ export default class BubbleSort extends Component{
   constructor(props){
     super(props);
     this.state = {
-      currentImg: require('./bbs.png'),
+      currentImg: require('../../img/bbs.png'),
       data: img.screens.bubble,
     }
   }
@@ -65,10 +65,10 @@ export default class BubbleSort extends Component{
           <View style = {styles.group}>
             <View style = {styles.tittle}>
               <Text style = {styles.tittleText} onPress = {() =>{
-                this.setState({currentImg: require('./bbs.png')})
+                this.setState({currentImg: require('../../img/bbs.png')})
                 }}  >Code C++ /</Text>
               <Text style = {styles.tittleText} onPress = {() =>{
-                this.setState({currentImg: require('./bbsjava.png')})
+                this.setState({currentImg: require('../../img/bbsjava.png')})
                 }} >Java </Text>
             </View>
             <View style = {styles.content}>

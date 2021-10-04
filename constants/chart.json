@@ -1,0 +1,74 @@
+{
+  "chart":[
+    {
+      "name": "Java",
+      "population": 16.694,
+      "color": "#ef5777",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "C",
+      "population": 15.601,
+      "color": "#575fcf",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "Python",
+      "population": 10.381,
+      "color": "#4bcffa",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "C++",
+      "population": 7.783,
+      "color": "#34e7e4",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "C#",
+      "population": 5.435,
+      "color": "#0be881",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "Visual Basic .Net",
+      "population": 5.218,
+      "color": "#ffc048",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "JavaScript",
+      "population": 5.218,
+      "color": "#ffd32a",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "PHP",
+      "population": 3.117,
+      "color": "#ff9ff3",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "SQL",
+      "population": 2.955,
+      "color": "#0abde3",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    },
+    {
+      "name": "Object-C",
+      "population": 2.523,
+      "color": "#01a3a4",
+      "legendFontColor": "#7F7F7F",
+      "legendFontSize": 15
+    }
+  ]
+}
