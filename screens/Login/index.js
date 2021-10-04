@@ -27,10 +27,10 @@ export default class Login extends Component {
     for( let i=0;i<this.state.data.length;i++){
         if(this.state.data[i].user===this.state.User&& this.state.Pass===this.state.data[i].pass){
             this.navigation.navigate('Home',this.state.data[i]);
-            alert("Dang nhap thanh cong");
+            alert("Đăng nhập thành công !!!");
         }
         else{
-            alert("Dang nhap that bai");
+            alert("Đăng nhập thất bại vui lòng kiểm tra lại tài khoản hoặc mật khẩu !!!");
         }
     }
 }
