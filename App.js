@@ -6,6 +6,7 @@ import SortScreens from './screens/SortScreens';
 import ArrAndLinkList from './screens/ArrAndLinkList';
 import Login from './screens/Login';
 import Chart from './screens/Chart';
+import Forum from './screens/Forum'
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -83,6 +84,20 @@ export default function App() {
            name='Mảng và danh sách liên kết !!!'
            component={ArrAndLinkList}
            options={{title: 'Mảng và danh sách liên kết !!!',
+             headerTintColor: '#ffffff',
+             headerTitleAlign: 'center',
+               headerStyle:{
+                 backgroundColor: '#4cd137',
+               },
+               headerTitleStyle: {
+                 fontWeight: 'bold',
+               }
+         }}
+        ></Stack.Screen>
+        <Stack.Screen
+           name='Forum'
+           component={Forum}
+           options={{title: 'Diễn đàn',
              headerTintColor: '#ffffff',
              headerTitleAlign: 'center',
                headerStyle:{
