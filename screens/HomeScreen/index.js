@@ -68,25 +68,22 @@ const styles = StyleSheet.create({
     // justifyContent: 'center', 
     
   },
-  title:{
-    fontSize: 40,
-    textAlign: 'center',
-    fontWeight: 'bold',
-    marginBottom: 30,
-  },
   button:{
     borderWidth: 1,
-    padding: 10,
+    paddingLeft: 10,
     width: '100%',
     marginBottom: 10,
     marginRight: 10,
     backgroundColor: '#8c7ae6',
     height: 75,
+    borderColor: '#8c7ae6',
+    justifyContent: 'center'
   },
   buttonText:{
     fontSize: 20,
     fontWeight: 'bold',
     color: '#ffffff',
+    
   },
   list: {
     marginTop: 25,
