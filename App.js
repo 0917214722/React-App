@@ -27,7 +27,7 @@ export default function App() {
       <Stack.Screen
           name='Login'
           component={Login}
-          options={{title: 'Lập trình không khó !!!',
+          options={{title: 'VNOI',
             headerTintColor: '#ffffff',
             headerTitleAlign: 'center',
               headerStyle:{
@@ -42,7 +42,7 @@ export default function App() {
         <Stack.Screen
           name='Home'
           component={HomeScreen}
-          options={{title: 'Lập trình không khó !!!',
+          options={{title: 'VNOI',
             headerTintColor: '#ffffff',
             headerTitleAlign: 'center',
               headerStyle:{
@@ -57,7 +57,7 @@ export default function App() {
         <Stack.Screen
           name='Thuật toán sắp xếp !!!'
           component={SortScreens}
-          options={{title: 'Sắp xếp !!!',
+          options={{title: 'Thuật toán sắp xếp !!!',
             headerTintColor: '#ffffff',
             headerTitleAlign: 'center',
               headerStyle:{
