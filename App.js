@@ -6,7 +6,8 @@ import SortScreens from './screens/SortScreens';
 import ArrAndLinkList from './screens/ArrAndLinkList';
 import Login from './screens/Login';
 import Chart from './screens/Chart';
-import Forum from './screens/Forum'
+import Forum from './screens/Forum';
+import RegistrationScreen from './screens/RegistrationScreen/RegistrationScreen.js';
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -23,7 +24,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
           name='Login'
           component={Login}
           options={{title: 'Lập trình không khó !!!',
@@ -37,7 +38,7 @@ export default function App() {
               }
 
         }} // style header bar
-        ></Stack.Screen> */}
+        ></Stack.Screen>
         <Stack.Screen
           name='Home'
           component={HomeScreen}
@@ -107,6 +108,21 @@ export default function App() {
                  fontWeight: 'bold',
                }
          }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name='Regis'
+          component={RegistrationScreen}
+          options={{title: 'Lập trình không khó !!!',
+            headerTintColor: '#ffffff',
+            headerTitleAlign: 'center',
+              headerStyle:{
+                backgroundColor: '#4cd137',
+              },
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              }
+
+        }} // style header bar
         ></Stack.Screen>
       </Stack.Navigator>   
     </NavigationContainer>
