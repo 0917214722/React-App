@@ -24,14 +24,19 @@ export default class Login extends Component {
     } 
   }
   checkuser(){
+    let cnt = 0;
     for( let i=0;i<this.state.data.length;i++){
         if(this.state.data[i].user===this.state.User&& this.state.Pass===this.state.data[i].pass){
-            this.navigation.navigate('Home',this.state.data[i]);
-            alert("Đăng nhập thành công !!!");
+          cnt++;
         }
-        else{
-            alert("Đăng nhập thất bại vui lòng kiểm tra lại tài khoản hoặc mật khẩu !!!");
-        }
+    }
+    if (cnt == 1) {
+      this.navigation.navigate('Home');
+      alert("Đăng nhập thành công !!!");
+    }
+    else
+    {
+      alert("Đăng nhập Thất bại !!!");
     }
 }
   render() {

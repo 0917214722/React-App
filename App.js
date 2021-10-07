@@ -23,7 +23,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
           name='Login'
           component={Login}
           options={{title: 'Lập trình không khó !!!',
@@ -37,7 +37,7 @@ export default function App() {
               }
 
         }} // style header bar
-        ></Stack.Screen> */}
+        ></Stack.Screen>
         <Stack.Screen
           name='Home'
           component={HomeScreen}

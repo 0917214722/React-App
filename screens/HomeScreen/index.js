@@ -18,19 +18,11 @@ export default class HomeScreen extends Component{
     this.navigation = props.navigation;
     this.gotoDetail = this.gotoDetail.bind(this);
     this.renderItem = this.renderItem.bind(this);
-    // this.state = {
-    //   data:[
-    //     {id :1, name: 'Thuật toán sắp xếp !!!'},
-    //     {id :2, name: 'SomeThing'},
-    //     {id :3, name: 'minhvn'},
-    //   ]
-    // }
     this.state = {
       data: data.screens
     }
   }
   gotoDetail(name){
-    // console.log(name);
     this.navigation.navigate(name,{name:name});
   }
   renderItem({item}){
@@ -40,14 +32,7 @@ export default class HomeScreen extends Component{
       </TouchableOpacity>
     )
   }
-  render(){
-    // let renderButton = this.state.data.map((item,index) => (
-    //       <TouchableOpacity key = {index} style = {styles.button} onPress = {() => this.gotoDetail(item.name)}>
-    //         <Text style = {styles.buttonText}>Go to {item.name} screen </Text>
-    //       </TouchableOpacity>
-    //     ))
-
-        
+  render(){   
     return(
       <View style = {styles.container}>
         <FlatList
@@ -64,9 +49,6 @@ export default class HomeScreen extends Component{
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center', 
-    
   },
   button:{
     borderWidth: 1,

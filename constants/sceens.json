@@ -2,11 +2,7 @@
     "screens":[
         {	
 					"id": "1",
-					"name": "Thuật toán sắp xếp !!!",
-					"bubble": {
-						"cpp": "https://media.istockphoto.com/photos/beauty-portrait-of-young-woman-picture-id1309405076?s=612x612",
-						"java": "./bbsjava.png"
-					}
+					"name": "Thuật toán sắp xếp !!!"
         },
 				{	
 					"id": "2",
