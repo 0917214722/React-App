@@ -35,39 +35,39 @@ export default class HomeScreen extends Component{
   }
   render(){
     return(
-      <View style = {styles.container}>
-        <Text style = {styles.tittle}>Thuật toán</Text>
-        <FlatList
-          data = {this.state.data}
-          renderItem = {this.renderItem}
-          keyExtractor = {item => item.id}
-          numColumns = {1}
-          style = {styles.list}
-        />
-        <Text style = {styles.tittle}>Mở rộng</Text>
-        <FlatList
-          data = {this.state.data2}
-          renderItem = {this.renderItem}
-          keyExtractor = {item => item.id}
-          numColumns = {1}
-          style = {styles.list}
-        />
-        
-      </View>
+      <ScrollView style = {styles.container}>
+        <View>
+          <Text style = {styles.tittle}>Thuật toán</Text>
+          <FlatList
+            data = {this.state.data}
+            renderItem = {this.renderItem}
+            keyExtractor = {item => item.id}
+            numColumns = {1}
+            style = {styles.list}
+          />
+          <Text style = {styles.tittle}>Mở rộng</Text>
+          <FlatList
+            data = {this.state.data2}
+            renderItem = {this.renderItem}
+            keyExtractor = {item => item.id}
+            numColumns = {1}
+            style = {styles.list}
+          />
+          
+        </View>
+      </ScrollView>
     )
   }
 }
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center', 
     backgroundColor: '#2f3640' 
   },
   button:{
     borderWidth: 1,
     paddingLeft: 10,
-    width: '90%',
+    width: '95%',
     marginBottom: 10,
     backgroundColor: '#8c7ae6',
     height: 75,
@@ -85,10 +85,12 @@ const styles = StyleSheet.create({
   },
   list: {
     marginTop: 10,
+    marginLeft: 15,
+    marginRight: 15,
     borderWidth: 3,
     borderColor: '#fbc531',
-    height: '100%',
-    borderRadius: 15
+    borderRadius: 15,
+    padding: (10,0,0,10)
   },
   tittle:{
     color: '#f5f6fa',
