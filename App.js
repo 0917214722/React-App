@@ -24,7 +24,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      <Stack.Screen
+      {/* <Stack.Screen
           name='Login'
           component={Login}
           options={{title: 'VNOI',
@@ -38,7 +38,7 @@ export default function App() {
               }
 
         }} // style header bar
-        ></Stack.Screen>
+        ></Stack.Screen> */}
         <Stack.Screen
           name='Home'
           component={HomeScreen}

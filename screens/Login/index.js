@@ -45,12 +45,9 @@ export default class Login extends Component {
     {
       alert("Đăng nhập Thất bại !!!");
     }
-<<<<<<< HEAD
-=======
 }
 toggleSwitch() {
   this.setState({ showPassword: !this.state.showPassword });
->>>>>>> f98ba0a11ccfcbb962ce508ef0af7514574bfb44
 }
   render() {
     return (

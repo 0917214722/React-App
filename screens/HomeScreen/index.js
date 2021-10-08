@@ -33,11 +33,7 @@ export default class HomeScreen extends Component{
       </TouchableOpacity>
     )
   }
-<<<<<<< HEAD
-  render(){   
-=======
   render(){
->>>>>>> f98ba0a11ccfcbb962ce508ef0af7514574bfb44
     return(
       <ScrollView style = {styles.container}>
         <View>
@@ -66,10 +62,7 @@ export default class HomeScreen extends Component{
 const styles = StyleSheet.create({
   container:{
     flex: 1,
-<<<<<<< HEAD
-=======
     backgroundColor: '#2f3640' 
->>>>>>> f98ba0a11ccfcbb962ce508ef0af7514574bfb44
   },
   button:{
     borderWidth: 1,
