@@ -9,19 +9,26 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  Image
+  Image,
+  Switch,
 } from 'react-native';
 const data = require('../../constants/User.json')
 export default class Login extends Component {
   constructor(props){
     super(props);
     this.navigation = props.navigation;
+    this.toggleSwitch = this.toggleSwitch.bind(this);
+    this.goToRegister = this.goToRegister.bind(this);
     this.state = {
       data:data.User,
       check:'',
       User:'',
-      Pass:''
+      Pass:'',
+      showPassword: true,
     } 
+  }
+  goToRegister(){
+    this.navigation.navigate('Regis');
   }
   checkuser(){
     let cnt = 0;
@@ -38,6 +45,12 @@ export default class Login extends Component {
     {
       alert("Đăng nhập Thất bại !!!");
     }
+<<<<<<< HEAD
+=======
+}
+toggleSwitch() {
+  this.setState({ showPassword: !this.state.showPassword });
+>>>>>>> f98ba0a11ccfcbb962ce508ef0af7514574bfb44
 }
   render() {
     return (
@@ -45,12 +58,21 @@ export default class Login extends Component {
         alignSelf: 'center', alignContent: 'center', alignItems: 'center'
       }}>
         <TextInput placeholder = {"Enter username"} style = {{height:42,width:"80%",borderBottomWidth:1,borderColor: "#4cd137"}} value={this.state.User}  onChangeText = {(value) => {this.setState({User:value})}} />
-        <TextInput placeholder = {"Enter password"} style = {{height:42,width:"80%",borderBottomWidth:1,marginTop:"5%",borderColor: "#4cd137"}} value={this.state.Pass}  onChangeText = {(value) => {this.setState({Pass:value})}} autoCompleteType="password" secureTextEntry={true}/>
-        <View style = {styles.group}>
+        <View style = {{...styles.group, borderBottomWidth:1, borderColor: "#4cd137"}}>
+          <TextInput placeholder = {"Enter password"} style = {{height:42,width:"80%",marginTop:"5%"}} value={this.state.Pass}  onChangeText = {(value) => {this.setState({Pass:value})}} autoCompleteType="password" secureTextEntry={this.state.showPassword}/>  
+          <Switch
+          onValueChange={this.toggleSwitch}
+          value={!this.state.showPassword}
+          style = {{marginTop: 15}}
+          />
+          <Text style = {{marginTop: 25}}>Show</Text>        
+        </View>
+        
+        <View style = {styles.group}> 
           <TouchableOpacity style = {styles.button} onPress={this.checkuser.bind(this)}>
             <Text style = {{color: "white"}}>Login</Text>
           </TouchableOpacity>
-          <TouchableOpacity style = {styles.button}>
+          <TouchableOpacity style = {styles.button} onPress = {this.goToRegister}>
             <Text style = {{color: "white"}}>Sign up</Text>
           </TouchableOpacity>
         </View>
@@ -60,6 +82,11 @@ export default class Login extends Component {
 }
 const styles = StyleSheet.create({
   group: {
+    marginTop: "10%",
+    width: "80%",
+    flexDirection: 'row'
+  },
+  group1: {
     marginTop: "10%",
     width: "80%",
     flexDirection: 'row'
