@@ -8,6 +8,7 @@ import Login from './screens/Login';
 import Chart from './screens/Chart';
 import Forum from './screens/Forum';
 import RegistrationScreen from './screens/RegistrationScreen/RegistrationScreen.js';
+import SqrtDecomposition from './screens/SqrtDecomposition'
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -108,6 +109,21 @@ export default function App() {
                  fontWeight: 'bold',
                }
          }}
+        ></Stack.Screen>
+        <Stack.Screen
+          name='Bài toán chia căn !!!'
+          component={SqrtDecomposition}
+          options={{title: 'Bài toán chia căn !!!',
+            headerTintColor: '#ffffff',
+            headerTitleAlign: 'center',
+              headerStyle:{
+                backgroundColor: '#4cd137',
+              },
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              }
+
+        }} // style header bar
         ></Stack.Screen>
         <Stack.Screen
           name='Regis'
