@@ -10,7 +10,9 @@ import {
 	TouchableOpacity,
 	useColorScheme,
 	View,
-  Dimensions
+  Dimensions,
+  Linking,
+  Button
 } from 'react-native';
 import { Table, TableWrapper, Row, Rows, Col, Cols, Cell } from 'react-native-table-component';
 export default class Forum extends Component{
@@ -19,31 +21,85 @@ export default class Forum extends Component{
     this.state = {
       tableHead1: ['Các kì thi online', 'Bài viết	', 'Bài viết cuối'],
       tableData1: [
-        ['Thông báo', '95', 'Giới thiệu về vnoi'],
-        ['Các kỳ thi của VNOI', '518', 'Gợi ý các bài VNOI Online 2016'],
-        ['Codeforces', '112', 'Codeforces Round #359'],
-        ['Topcoder', '0', '	Chưa có bài viết'],
-        ['Các kỳ thi khác', '79', '	July Challenge 2016']
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/30/')}>Thông báo </Text>,
+          '95', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/30/5658/')}>Giới thiệt admin</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/11/')}>Các kỳ thi của VNOI</Text>,
+          '518', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/11/5384/')}>Gợi ý các bài VNOI Online 2021</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/1/')}>Codeforces </Text>,
+          '112', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/1/5623/')}>Codeforces Round #359</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/2/')}>Topcoder</Text>,
+          '0', 
+          'Chưa có bài viết'
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/12/')}>Các kỳ thi khác</Text>,
+          '73', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/12/5636/')}>July Challenge 2016</Text>
+        ]
       ],
       tableHead2: ['Online Judge', 'Bài viết	', 'Bài viết cuối'],
       tableData2: [
-        ['VOJ, SPOJ', '133', 'LQDFROG Xin thuật toán'],
-        ['Các OJ khác', '112', '[FPC] chương trình ra kết quả trên ideone khác kết quả ra trên máy']
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/3/')}>VOJ, SPOJ</Text>,
+          '133', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/3/5587/')}>LQDFROG Xin thuật toán</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/4/')}>Các OJ khác</Text>,
+          '13', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/4/5391/')}>[FPC] chương trình ra kết quả trên ideone khác kết quả ra trên máy</Text>
+        ]
       ],
       tableHead3: ['Thi Quốc gia, Quốc tế','Bài viết','Bài viết cuối'],
       tableData3: [
-        ['Thi HSG Quốc gia, Quốc Tế', '374', 'Nhận xét về kì thi quốc gia 2016.'],
-        ['ACM', '205', '2016 ACM-ICPC Phuket World Finals !'],
-        ['Các kỳ thi khác', '29	', 'Kì thi duyên hải 2016']
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/13/')}>Thi HSG Quốc gia, Quốc Tế</Text>,
+          '374', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/13/5432/')}>Nhận xét về kì thi quốc gia 2016</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/15/')}>ACM</Text>,
+          '205', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/15/5580/')}>2016 ACM-ICPC Phuket World Finals</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/16/')}>Các kỳ thi khác</Text>,
+          '29', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/16/5548/')}>Kỳ thi duyên hải năm 2016</Text>
+        ]
       ],
       tableHead4: ['Thảo luận chung','Bài viết','Bài viết cuối'],
       tableData4: [
-        ['Thuật toán', '265', 'Nhân ma trận.'],
-        ['Machine Learning', '30', 'Cần phải làm gì để học machine learning.'],
-        ['Ngôn ngữ lập trình', '79	', 'Tìm lớp học lập trình']
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/5/')}>Thuật toán</Text>,
+          '265', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/5/5629/')}>Nhân ma trận</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/6/')}>Ngôn ngữ lập trình</Text>,
+          '30 ', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/6/5097/')}>Góc nhìn d_t_nguyen: Cần phải làm gì để học Machine learning</Text>
+        ],
+        [
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/148/')}>Các kỳ thi khác</Text>,
+          '79', 
+          <Text style={{color: 'blue', margin: 6}} onPress={() => Linking.openURL('https://vnoi.info/forum/148/5278/')}>Tìm lớp học lập trình</Text>
+        ]
       ],
     }
   }
+  
+  
   render(){
     return(
       <ScrollView>
@@ -73,10 +129,8 @@ const styles = StyleSheet.create({
   head: { 
     height: 50, 
     backgroundColor: '#40739e'
-   },
+  },
   text: { 
     margin: 6 
-  }
-
-
+  },
 });
