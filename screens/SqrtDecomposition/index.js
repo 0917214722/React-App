@@ -10,8 +10,8 @@ import {
   TextInput,
   TouchableOpacity,
 } from 'react-native';
-import Problem1 from './Problem1';
-import Problem2 from './Problem2';
+import Problem1 from './Problem1'
+import Problem2 from './Problem2'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 const Tab = createMaterialTopTabNavigator();
 export default class index extends Component {
