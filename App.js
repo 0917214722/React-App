@@ -10,6 +10,7 @@ import Forum from './screens/Forum';
 import RegistrationScreen from './screens/RegistrationScreen/RegistrationScreen.js';
 import SqrtDecomposition from './screens/SqrtDecomposition'
 import AboutUs from './screens/AboutUs';
+import Practice from './screens/Practice';
 const Stack = createNativeStackNavigator();
 import {
   SafeAreaView,
@@ -26,7 +27,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
           name='Login'
           component={Login}
           options={{title: 'VNOI',
@@ -40,7 +41,7 @@ export default function App() {
               }
 
         }} // style header bar
-        ></Stack.Screen> */}
+        ></Stack.Screen>
         <Stack.Screen
           name='Home'
           component={HomeScreen}
@@ -145,6 +146,21 @@ export default function App() {
           name='Regis'
           component={RegistrationScreen}
           options={{title: 'Lập trình không khó !!!',
+            headerTintColor: '#ffffff',
+            headerTitleAlign: 'center',
+              headerStyle:{
+                backgroundColor: '#4cd137',
+              },
+              headerTitleStyle: {
+                fontWeight: 'bold',
+              }
+
+        }} // style header bar
+        ></Stack.Screen>
+        <Stack.Screen
+          name='Practice'
+          component={Practice}
+          options={{title: 'Practice',
             headerTintColor: '#ffffff',
             headerTitleAlign: 'center',
               headerStyle:{

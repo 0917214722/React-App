@@ -1,0 +1,44 @@
+{
+    "CONTENT": [
+        {
+            "isExpanded": false,
+            "category_name": "Data Structures",
+            "subcategory": [
+              { "id": "Prob 1.1", "namep": "Segment Tree", "link": "https://codeforces.com/", "img": "https://www.flickr.com/photos/194194996@N03/51600012820/in/dateposted-public/" },
+              { "id": "Prob 1.2", "namep": "BIT", "link": "https://codeforces.com/", "img": "https://www.flickr.com/photos/194194996@N03/51600012820/in/dateposted-public/" },
+              { "id": "Prob 1.3", "namep": "Lazy Update", "link": "https://codeforces.com/", "img": "https://www.flickr.com/photos/194194996@N03/51600012820/in/dateposted-public/" }
+            ]
+          },
+          {
+            "isExpanded": false,
+            "category_name": "Algorithms",
+            "subcategory": [
+              { "id": "Prob 2.1", "namep": "Modulo", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.2", "namep": "Combinatorics", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.3", "namep": "Probabilities", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" }
+            ]
+          },
+          {
+            "isExpanded": false,
+            "category_name": "Dynamic Programming",
+            "subcategory": [
+              { "id": "Prob 2.1", "namep": "Dynamic", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.2", "namep": "Programming", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.3", "namep": "Optimize", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.4", "namep": "Hill Cover", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 2.5", "namep": "Bit", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" }
+            ]
+          },
+          {
+            "isExpanded": false,
+            "category_name": "Graph",
+            "subcategory": [
+              { "id": "Prob 3.1", "namep": "DFS & BFS", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 3.2", "namep": "2-SAT Problem", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 3.3", "namep": "Disjoin Set Union", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 3.4", "namep": "Lowest Common Accessor", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" },
+              { "id": "Prob 3.5", "namep": "Maxflow Network", "link": "https://codeforces.com/", "img": "https://drive.google.com/file/d/1I4GJzXLn6lKCOqzWNoFE2q82TsBs_k2s/view?usp=sharing" }
+            ]
+          } 
+    ]
+}
