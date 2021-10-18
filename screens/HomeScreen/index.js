@@ -35,8 +35,8 @@ export default class HomeScreen extends Component{
   }
   render(){
     return(
-      <ScrollView style = {styles.container}>
-        <View>
+      <ScrollView>
+        <View style = {styles.container}>
           <Text style = {styles.tittle}>Thuật toán</Text>
           <FlatList
             data = {this.state.data}
