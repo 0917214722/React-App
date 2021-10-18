@@ -36,7 +36,7 @@ export default class HomeScreen extends Component{
   render(){
     return(
       <ScrollView style = {styles.container}>
-        <View>
+        <View style = {styles.container}>
           <Text style = {styles.tittle}>Thuật toán</Text>
           <FlatList
             data = {this.state.data}
@@ -75,13 +75,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderRadius: 10, 
     alignItems: 'center',
-    alignSelf: 'center'
+    alignSelf: 'center',
+    position: 'relative'
   },
   buttonText:{
     fontSize: 20,
     fontWeight: 'bold',
     color: '#ffffff',
-    
   },
   list: {
     marginTop: 10,
@@ -90,7 +90,8 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     borderColor: '#fbc531',
     borderRadius: 15,
-    padding: (10,0,0,10)
+    padding: (10,0,0,10),
+    
   },
   tittle:{
     color: '#f5f6fa',
